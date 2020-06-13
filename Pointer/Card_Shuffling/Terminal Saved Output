@@ -1,0 +1,253 @@
+Last login: Wed Oct 30 09:34:17 on ttys001
+linxinkaide-MacBook-Pro:~ albertlin$ cd Desktop/NTUCSIE/Recursion/
+linxinkaide-MacBook-Pro:Recursion albertlin$ ls
+From_One_Corner_to_Another			Pick_up_Numbers.c
+From_One_Corner_to_Another.c			Subset_Sum
+From_One_Corner_to_Another_with_Obstacles	Subset_Sum.c
+From_One_Corner_to_Another_with_Obstacles.c	Sum_of_Squares_with_Recursion
+Material_Composition				Sum_of_Squares_with_Recursion.c
+Material_Composition.c				The_Knapsack
+Permutation					The_Knapsack.c
+Permutation.c					Witchcraft
+Pick_up_Numbers					Witchcraft.c
+linxinkaide-MacBook-Pro:Recursion albertlin$ gcc Lakes.c -o Lakes
+Lakes.c:3:28: error: expected ';' after top level declarator
+int dx[] = {1 , 0 , -1 , 0}
+                           ^
+                           ;
+Lakes.c:4:28: error: expected ';' after top level declarator
+int dy[] = {0 , 1 , 0 , -1}
+                           ^
+                           ;
+Lakes.c:7:11: error: subscripted value is not an array, pointer, or vector
+        if(map[x][y] == 0 || map == 1)
+           ~~~~~~^~
+Lakes.c:7:27: warning: comparison between pointer and integer ('int *' and 'int')
+        if(map[x][y] == 0 || map == 1)
+                             ~~~ ^  ~
+Lakes.c:10:9: error: subscripted value is not an array, pointer, or vector
+                map[x][y] = 1;
+                ~~~~~~^~
+Lakes.c:31:11: error: use of undeclared identifier 'x'
+                                count(x , y , map);
+                                      ^
+Lakes.c:31:15: error: use of undeclared identifier 'y'
+                                count(x , y , map);
+                                          ^
+1 warning and 6 errors generated.
+linxinkaide-MacBook-Pro:Recursion albertlin$ gcc Lakes.c -o Lakes
+Lakes.c:3:28: error: expected ';' after top level declarator
+int dx[] = {1 , 0 , -1 , 0}
+                           ^
+                           ;
+Lakes.c:4:28: error: expected ';' after top level declarator
+int dy[] = {0 , 1 , 0 , -1}
+                           ^
+                           ;
+Lakes.c:7:49: error: subscripted value is not an array, pointer, or vector
+        if(x < 0 || x >= N || y < 0 || y >= M || map[x][y] == 0 || map[x][y] == 1)
+                                                 ~~~~~~^~
+Lakes.c:7:67: error: subscripted value is not an array, pointer, or vector
+        if(x < 0 || x >= N || y < 0 || y >= M || map[x][y] == 0 || map[x][y] == 1)
+                                                                   ~~~~~~^~
+Lakes.c:10:9: error: subscripted value is not an array, pointer, or vector
+                map[x][y] = 1;
+                ~~~~~~^~
+Lakes.c:31:11: error: use of undeclared identifier 'x'
+                                count(x , y , map , N , M);
+                                      ^
+Lakes.c:31:15: error: use of undeclared identifier 'y'
+                                count(x , y , map , N , M);
+                                          ^
+7 errors generated.
+linxinkaide-MacBook-Pro:Recursion albertlin$ gcc Lakes.c -o Lakes
+Lakes.c:3:28: error: expected ';' after top level declarator
+int dx[] = {1 , 0 , -1 , 0}
+                           ^
+                           ;
+Lakes.c:4:28: error: expected ';' after top level declarator
+int dy[] = {0 , 1 , 0 , -1}
+                           ^
+                           ;
+Lakes.c:7:49: error: subscripted value is not an array, pointer, or vector
+        if(x < 0 || x >= N || y < 0 || y >= M || map[x][y] == 0 || map[x][y] == 1)
+                                                 ~~~~~~^~
+Lakes.c:7:67: error: subscripted value is not an array, pointer, or vector
+        if(x < 0 || x >= N || y < 0 || y >= M || map[x][y] == 0 || map[x][y] == 1)
+                                                                   ~~~~~~^~
+Lakes.c:10:9: error: subscripted value is not an array, pointer, or vector
+                map[x][y] = 1;
+                ~~~~~~^~
+Lakes.c:31:10: error: called object type 'int' is not a function or function pointer
+                                count(i , j , map , N , M);
+                                ~~~~~^
+6 errors generated.
+linxinkaide-MacBook-Pro:Recursion albertlin$ gcc Lakes.c -o Lakes
+Lakes.c:7:49: error: subscripted value is not an array, pointer, or vector
+        if(x < 0 || x >= N || y < 0 || y >= M || map[x][y] == 0 || map[x][y] == 1)
+                                                 ~~~~~~^~
+Lakes.c:7:67: error: subscripted value is not an array, pointer, or vector
+        if(x < 0 || x >= N || y < 0 || y >= M || map[x][y] == 0 || map[x][y] == 1)
+                                                                   ~~~~~~^~
+Lakes.c:10:9: error: subscripted value is not an array, pointer, or vector
+                map[x][y] = 1;
+                ~~~~~~^~
+Lakes.c:31:10: error: called object type 'int' is not a function or function pointer
+                                count(i , j , map , N , M);
+                                ~~~~~^
+4 errors generated.
+linxinkaide-MacBook-Pro:Recursion albertlin$ gcc Lakes.c -o Lakes
+Lakes.c:3:28: error: expected ';' after top level declarator
+int dr[] = {0 , 1 , 0 , -1}
+                           ^
+                           ;
+Lakes.c:4:28: error: expected ';' after top level declarator
+int dc[] = {1 , 0 , -1 , 0}
+                           ^
+                           ;
+Lakes.c:7:19: error: use of undeclared identifier 'N'
+        if(r < 0 || r >= N || c < 0 || c >= M || map[r][c] == 0)
+                         ^
+Lakes.c:7:38: error: use of undeclared identifier 'M'
+        if(r < 0 || r >= N || c < 0 || c >= M || map[r][c] == 0)
+                                            ^
+Lakes.c:7:49: error: subscripted value is not an array, pointer, or vector
+        if(r < 0 || r >= N || c < 0 || c >= M || map[r][c] == 0)
+                                                 ~~~~~~^~
+Lakes.c:10:9: error: subscripted value is not an array, pointer, or vector
+                map[r][c] = 0;
+                ~~~~~~^~
+Lakes.c:29:11: error: use of undeclared identifier 'r'
+                                count(r , c , map);
+                                      ^
+Lakes.c:29:15: error: use of undeclared identifier 'c'
+                                count(r , c , map);
+                                          ^
+8 errors generated.
+linxinkaide-MacBook-Pro:Recursion albertlin$ gcc Lakes.c -o Lakes
+Lakes.c:7:19: error: use of undeclared identifier 'N'
+        if(r < 0 || r >= N || c < 0 || c >= M || map[r][c] == 0)
+                         ^
+Lakes.c:7:38: error: use of undeclared identifier 'M'
+        if(r < 0 || r >= N || c < 0 || c >= M || map[r][c] == 0)
+                                            ^
+Lakes.c:7:49: error: subscripted value is not an array, pointer, or vector
+        if(r < 0 || r >= N || c < 0 || c >= M || map[r][c] == 0)
+                                                 ~~~~~~^~
+Lakes.c:10:9: error: subscripted value is not an array, pointer, or vector
+                map[r][c] = 0;
+                ~~~~~~^~
+Lakes.c:29:11: error: use of undeclared identifier 'r'
+                                count(r , c , map);
+                                      ^
+Lakes.c:29:15: error: use of undeclared identifier 'c'
+                                count(r , c , map);
+                                          ^
+6 errors generated.
+linxinkaide-MacBook-Pro:Recursion albertlin$ gcc Lakes.c -o Lakes
+Lakes.c:7:19: error: use of undeclared identifier 'N'
+        if(r < 0 || r >= N || c < 0 || c >= M || map[r][c] == 0)
+                         ^
+Lakes.c:7:38: error: use of undeclared identifier 'M'
+        if(r < 0 || r >= N || c < 0 || c >= M || map[r][c] == 0)
+                                            ^
+Lakes.c:7:49: error: subscripted value is not an array, pointer, or vector
+        if(r < 0 || r >= N || c < 0 || c >= M || map[r][c] == 0)
+                                                 ~~~~~~^~
+Lakes.c:10:9: error: subscripted value is not an array, pointer, or vector
+                map[r][c] = 0;
+                ~~~~~~^~
+Lakes.c:29:10: error: called object type 'int' is not a function or function pointer
+                                count(i , j , map);
+                                ~~~~~^
+5 errors generated.
+linxinkaide-MacBook-Pro:Recursion albertlin$ gcc Lakes.c -o Lakes
+Lakes.c:7:19: error: use of undeclared identifier 'N'
+        if(r < 0 || r >= N || c < 0 || c >= M || map[r][c] == 0)
+                         ^
+Lakes.c:7:38: error: use of undeclared identifier 'M'
+        if(r < 0 || r >= N || c < 0 || c >= M || map[r][c] == 0)
+                                            ^
+Lakes.c:7:49: error: subscripted value is not an array, pointer, or vector
+        if(r < 0 || r >= N || c < 0 || c >= M || map[r][c] == 0)
+                                                 ~~~~~~^~
+Lakes.c:10:9: error: subscripted value is not an array, pointer, or vector
+                map[r][c] = 0;
+                ~~~~~~^~
+Lakes.c:29:19: warning: incompatible pointer types passing 'int [N][M]' to parameter of type 'int *'
+      [-Wincompatible-pointer-types]
+                                count(i , j , map);
+                                              ^~~
+Lakes.c:6:32: note: passing argument to parameter 'map' here
+void count(int r , int c , int map[]){
+                               ^
+1 warning and 4 errors generated.
+linxinkaide-MacBook-Pro:Recursion albertlin$ gcc Lakes.c -o Lakes
+Lakes.c:7:49: error: subscripted value is not an array, pointer, or vector
+        if(r < 0 || r >= N || c < 0 || c >= M || map[r][c] == 0)
+                                                 ~~~~~~^~
+Lakes.c:10:9: error: subscripted value is not an array, pointer, or vector
+                map[r][c] = 0;
+                ~~~~~~^~
+Lakes.c:29:27: warning: incompatible pointer types passing 'int [N][M]' to parameter of type 'int *'
+      [-Wincompatible-pointer-types]
+                                count(i , j , N , M , map);
+                                                      ^~~
+Lakes.c:6:48: note: passing argument to parameter 'map' here
+void count(int r , int c , int N , int M , int map[]){
+                                               ^
+1 warning and 2 errors generated.
+linxinkaide-MacBook-Pro:Recursion albertlin$ gcc Lakes.c -o Lakes
+linxinkaide-MacBook-Pro:Recursion albertlin$ ./Lakes 
+^Z
+[1]+  Stopped                 ./Lakes
+linxinkaide-MacBook-Pro:Recursion albertlin$ ./Lakes < in
+Segmentation fault: 11
+linxinkaide-MacBook-Pro:Recursion albertlin$ gcc Lakes.c -o Lakes
+linxinkaide-MacBook-Pro:Recursion albertlin$ ./Lakes < in
+Segmentation fault: 11
+linxinkaide-MacBook-Pro:Recursion albertlin$ gcc Lakes.c -o Lakes
+linxinkaide-MacBook-Pro:Recursion albertlin$ ./Lakes < in
+linxinkaide-MacBook-Pro:Recursion albertlin$ gcc Lakes.c -o Lakes
+linxinkaide-MacBook-Pro:Recursion albertlin$ ./Lakes < in
+linxinkaide-MacBook-Pro:Recursion albertlin$ gcc Lakes.c -o Lakes
+linxinkaide-MacBook-Pro:Recursion albertlin$ ./Lakes < in
+linxinkaide-MacBook-Pro:Recursion albertlin$ gcc Lakes.c -o Lakes
+linxinkaide-MacBook-Pro:Recursion albertlin$ ./Lakes < in
+2
+linxinkaide-MacBook-Pro:Recursion albertlin$ gcc Lakes.c -o Lakes
+Lakes.c:12:1: warning: control may reach end of non-void function [-Wreturn-type]
+}
+^
+1 warning generated.
+linxinkaide-MacBook-Pro:Recursion albertlin$ ./Lakes < in
+47
+8
+linxinkaide-MacBook-Pro:Recursion albertlin$ gcc Lakes.c -o Lakes
+linxinkaide-MacBook-Pro:Recursion albertlin$ ./Lakes < in
+0
+0
+linxinkaide-MacBook-Pro:Recursion albertlin$ gcc Lakes.c -o Lakes
+Lakes.c:39:50: error: expected ';' after expression
+                                largest = (largest > count ? largest : count)
+                                                                             ^
+                                                                             ;
+1 error generated.
+linxinkaide-MacBook-Pro:Recursion albertlin$ gcc Lakes.c -o Lakes
+linxinkaide-MacBook-Pro:Recursion albertlin$ ./Lakes < in
+2
+1
+linxinkaide-MacBook-Pro:Recursion albertlin$ gcc Lakes.c -o Lakes
+linxinkaide-MacBook-Pro:Recursion albertlin$ ./Lakes < in
+47
+32
+linxinkaide-MacBook-Pro:Recursion albertlin$ gcc Lakes.c -o Lakes
+Lakes.c:6:6: error: array initializer must be an initializer list or wide string literal
+        int ways[4] = 0;
+            ^
+1 error generated.
+linxinkaide-MacBook-Pro:Recursion albertlin$ gcc Lakes.c -o Lakes
+linxinkaide-MacBook-Pro:Recursion albertlin$ ./Lakes < in
+47
+32
+linxinkaide-MacBook-Pro:Recursion albertlin$ 
